@@ -1,4 +1,4 @@
-import { createContext, useState, useReducer, useParams } from "react";
+import { createContext, useReducer } from "react";
 import fundReducer from "./FundReducer";
 
 const FundContext = createContext();
@@ -39,17 +39,6 @@ export const FundProvider = ({ children }) => {
   };
 
   const clearResults = () => dispatch({ type: "CLEAR_FUNDS" });
-
-  // Under utveckling
-  // const [detail, setDetail] = useState([]);
-  // const getDetails = async (text) => {
-  //   const res = await fetch(
-  //     `${process.env.REACT_APP_API_KEY}/fund/fundName`
-  //   );
-
-  //   const data = await res.json();
-  //   setDetail(data.fund);
-  // };
 
   return (
     <FundContext.Provider

@@ -10,11 +10,11 @@ export default function Home() {
         <Landing />
       </div>
 
-      <div className="hero min-h-screen" id="search">
-        <Search />
+      <div className="hero min-h-screen " id="search">
+        <Search className="" />
       </div>
 
-      <div className="hero min-h-screen z-0" id="about">
+      <div className="hero min-h-screen" id="about">
         <About />
       </div>
     </>
