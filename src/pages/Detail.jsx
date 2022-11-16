@@ -28,13 +28,10 @@ export default function Detail(props) {
   return (
     <>
       {detail ? (
-        <div className="hero min-h-screen">
-          <h2 className="">{fundName}</h2>
-
+        <div className="page">
+          <h3 className="text-lg font-medium pb-5 pt-5">{fundName}</h3>
           <table className="table table-compact">
             <thead>
-              {" "}
-              <h3 className="text-lg font-medium pb-5 pt-5">{fundName}</h3>
               <tr>
                 <th>Fund holdings</th>
                 <th>Share</th>
@@ -48,7 +45,7 @@ export default function Detail(props) {
                     <tr>
                       <td>{item.companyName}</td>
                       <td>{item.shareOfFund}</td>
-                      <td>{moment(detail.holdingsDate).format("ll")} </td>
+                      <td>{moment(detail.holdingsDate).format("ll")}</td>
                     </tr>
                   </tbody>
                 );
@@ -58,7 +55,6 @@ export default function Detail(props) {
             type="submit"
             className="btn-sm btn-success rounded text-white"
           >
-            {" "}
             <Link to="/">Back</Link>
           </button>
         </div>

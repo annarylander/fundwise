@@ -6,6 +6,7 @@ import Detail from "./pages/Detail";
 import NotFound from "./pages/NotFound";
 import { FundProvider } from "./context/FundContext";
 import AllFunds from "./pages/AllFunds";
+import "./App.css";
 
 function App() {
   return (

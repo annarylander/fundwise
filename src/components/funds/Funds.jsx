@@ -7,17 +7,15 @@ const Funds = ({ funds, loading }) => {
   }
 
   return (
-    <div className="hero min-h-screen">
+    <div className="page">
+      <h3 className="text-lg font-medium pb-5 pt-5">Alla fonder</h3>
       <table className="table table-compact">
-        <thead>
-          <h3 className="text-lg font-medium pb-5 pt-5">Alla fonder</h3>
-        </thead>
         {funds.map((fund, index) => (
           <tbody className="hover:text-success" key={index}>
             <tr>
-              <Link to={`/fund/${fund}`}>
-                <td>{fund}</td>
-              </Link>
+              <td>
+                <Link to={`/fund/${fund}`}>{fund}</Link>
+              </td>
             </tr>
           </tbody>
         ))}
